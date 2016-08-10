@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/button_shape"
+        android:text="Check"
+        android:textColor="#FFFFFF"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNombre"
+        android:text="guz"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="right|top"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 puntos"
+        android:id="@+id/tvPuntos"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="right|top"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/tvTime"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="right|top"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El juego ha terminado"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/tvGameOver"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        android:id="@+id/tvRanking"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#6A1B9A"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+</FrameLayout>

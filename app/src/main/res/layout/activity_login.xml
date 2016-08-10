@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#00BCD4"
+    tools:context="com.guzf.checkgo.LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsername"
+        android:hint="Usuario"
+        android:textColorHint="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva partida"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogin"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/txtUsername"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
